@@ -14,7 +14,7 @@ body{
     font-weight: 800;
   }
   h3{
-    font-size:2.4rem;
+    font-size:2.6rem;
     font-weight: 700;
   }
   h4{
@@ -38,14 +38,22 @@ a{
     color: #ffffff;
     font-weight: 700;
 }
-
-
+ nav a:hover{
+    color: #ddb027 !important
+ }
 .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
-    /* position: static; */
+    position:fixed;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6N2Kga6CZUh1JQ4HjC0xLv0Qd1aHZ5zeJrw&s);
+}
+.navbar-light .navbar-brand .logo-img {
+ margin-top: 10px;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -66,13 +74,14 @@ a{
     height:3.5rem;
     width: 3.5rem;
     margin-left:3rem;
+
 }
 .logo-img img{
     height:100%;
     width: 100%;
 }
 .navbar-brand {
-    padding-bottom: .6125rem;
+    /* padding-bottom: .6125rem; */
     font-size:1.5rem;
     text-decoration: none;
     white-space: nowrap;
